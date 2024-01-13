@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/message_sender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Отправитель: Я хз"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/message_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ты помни, я тебя в покое не оставлю, ты меня понял???"
+        app:layout_constraintTop_toBottomOf="@id/message_sender"
+        app:layout_constraintStart_toStartOf="@id/message_sender"
+        android:textSize="16sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
