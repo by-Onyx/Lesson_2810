@@ -20,6 +20,7 @@ class StringAdapter: RecyclerView.Adapter<StringAdapter.StringViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StringViewHolder {
         val textView = TextView(parent.context)
+        textView.textSize = 20F
         return StringViewHolder(textView)
     }
 
